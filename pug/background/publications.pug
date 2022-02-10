@@ -3,10 +3,10 @@ unless _.isEmpty(resume.publications)
   .detail#publications
     .icon
       i.fs-lg.icon-newspaper
-      span.mobile-title Publications
+      span.mobile-title 出版刊物
 
     .info
-      h4.title.text-uppercase Publications
+      h4.title.text-uppercase 出版刊物
 
       .content
         ul.list-unstyled.clear-margin
@@ -23,6 +23,6 @@ unless _.isEmpty(resume.publications)
                   |#{publication.publisher}
 
                 p.text-muted
-                  small= 'Published on: ' + publication.releaseDate
+                  small= '出版於: ' + publication.releaseDate
 
                 .mop-wrapper!= publication.summary

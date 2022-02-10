@@ -2,10 +2,10 @@ unless _.isEmpty(resume.projects)
   .detail#projects-experience
     .icon
       i.fs-lg.icon-code
-      span.mobile-title Projects Experience
+      span.mobile-title 專案經驗
 
     .info
-      h4.title.text-uppercase Projects Experience
+      h4.title.text-uppercase 專案經驗
 
       ul.list-unstyled.clear-margin
         each project in resume.projects
@@ -15,7 +15,7 @@ unless _.isEmpty(resume.projects)
                 if !project.endDate
                   i.icon-circle.current-event(
                     rel="tooltip",
-                    title="Currently Working",
+                    title="現在工作於",
                     data-placement="left"
                   )
                 if project.url
@@ -30,7 +30,7 @@ unless _.isEmpty(resume.projects)
               p.text-muted
                 small
                   span.space-right
-                    |#{project.startDate} - #{project.endDate || 'Present'}
+                    |#{project.startDate} - #{project.endDate || '現在'}
 
                   if project.duration
                     span

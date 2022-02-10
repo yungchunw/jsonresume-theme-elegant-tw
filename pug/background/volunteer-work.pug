@@ -2,10 +2,10 @@ unless _.isEmpty(resume.volunteer)
   .detail#volunteer-work
     .icon
       i.fs-lg.icon-child
-      span.mobile-title Volunteer Work
+      span.mobile-title 志工服務
 
     .info
-      h4.title.text-uppercase Volunteer Work
+      h4.title.text-uppercase 志工服務
 
       .content
         ul.list-unstyled.clear-margin
@@ -16,7 +16,7 @@ unless _.isEmpty(resume.volunteer)
                   if !volunteer_info.endDate
                     i.icon-circle.current-event(
                       rel="tooltip",
-                      title="Currently Volunteering",
+                      title="現在服務於",
                       data-placement="left"
                     )
 
@@ -28,7 +28,7 @@ unless _.isEmpty(resume.volunteer)
 
                 p.text-muted
                   small
-                    |#{volunteer_info.startDate} - #{volunteer_info.endDate || 'Present'}
+                    |#{volunteer_info.startDate} - #{volunteer_info.endDate || '現在'}
 
                 .mop-wrapper!= volunteer_info.summary
 
